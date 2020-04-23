@@ -90,7 +90,7 @@ var _ = Describe("Jwks tests", func() {
 				Expect(*actualSignKey).To(Equal(expectedKeySet.Keys[0]))
 			})
 
-			It("refreshes the keys if the keys have expired", func() {
+			FIt("refreshes the keys if the keys have expired", func() {
 				body := fmt.Sprintf(`{"keys":[%s]}`, signKeyMarshaled)
 				numberOfCalls := 0
 				mockClient := newMockClient(func(req *http.Request) (*http.Response, error) {

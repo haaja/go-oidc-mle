@@ -133,7 +133,14 @@ func updateKeys(ctx context.Context, jwksUri string) ([]jose.JSONWebKey, time.Ti
 		return nil, time.Time{}, fmt.Errorf("unable to parse response cache headers: %v", err)
 	}
 	if exp.After(expiry) {
+		fmt.Println("Updating default expiry because of response headers")
+		fmt.Printf("header expiry: %s\n", exp)
+		fmt.Printf("default expiry: %s\n", expiry)
 		expiry = exp
+	} else {
+		fmt.Println("Not updating default expiry because of response headers")
+		fmt.Printf("header expiry: %s\n", exp)
+		fmt.Printf("default expiry: %s\n", expiry)
 	}
 	return keySet.Keys, expiry, nil
 }
