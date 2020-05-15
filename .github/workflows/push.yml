@@ -1,7 +1,7 @@
 on: push
 name: Tests on linux
 jobs:
-  test_all_platforms:
+  test_on_linux:
     runs-on: ubuntu-latest
     steps:
       - name: Install Go
