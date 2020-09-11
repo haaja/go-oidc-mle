@@ -1,6 +1,6 @@
 module github.com/haaja/go-oidc-mle
 
-go 1.13
+go 1.14
 
 require (
 	github.com/coreos/go-oidc v2.2.1+incompatible
