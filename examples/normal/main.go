@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/gofrs/uuid"
-	"github.com/qvik/go-oidc-mle"
+	"github.com/haaja/go-oidc-mle"
 )
 
 // The payload we're expecting from the provider

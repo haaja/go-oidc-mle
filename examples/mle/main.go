@@ -14,7 +14,7 @@ import (
 	"strings"
 
 	"github.com/gofrs/uuid"
-	"github.com/qvik/go-oidc-mle"
+	"github.com/haaja/go-oidc-mle"
 )
 
 type User struct {
