@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/gofrs/uuid"
-	"github.com/haaja/go-oidc-mle"
+	"github.com/qvik/go-oidc-mle"
 )
 
 // The payload we're expecting from the provider
@@ -40,6 +40,20 @@ func main() {
 
 	state := generateId()
 	nonce := generateId()
+
+	authMethods := []string{
+		"ftn-aktia-auth",
+		"ftn-alandsbanken-auth",
+		"ftn-danskebank-auth",
+		"ftn-handelsbanken-auth",
+		"ftn-nordea-auth",
+		"ftn-omasp-auth",
+		"ftn-op-auth",
+		"ftn-pop-auth",
+		"ftn-sp-auth",
+		"ftn-spankki-auth",
+		"mobiilivarmenne-ftn",
+	}
 
 	// Use one of the following authentication methods:
 	//  - ftn-aktia-auth
@@ -94,7 +108,7 @@ func main() {
 		_, _ = w.Write(data)
 	})
 
-	log.Printf("listening on http://%s/", "127.0.0.1:5000")
+	log.Printf("navigate to http://%s/auth/{auth_metho}, where auth_method is one of %v", "127.0.0.1:5000", authMethods)
 	log.Fatal(http.ListenAndServe("127.0.0.1:5000", nil))
 }
 

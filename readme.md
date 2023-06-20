@@ -9,7 +9,7 @@ This library wraps [oauth2](https://godoc.org/golang.org/x/oauth2) and [go-oidc]
 
 ## Examples
 
-A simplified examples implementations of authorization code flow using [Signicat](https://signicat.com) as a provider can be found from [examples](https://github.com/haaja/go-oidc-mle/blob/master/examples) directory.
+A simplified examples implementations of authorization code flow using [Signicat](https://signicat.com) as a provider can be found from [examples](https://github.com/qvik/go-oidc-mle/blob/master/examples) directory.
 
 To run the example using MLE:
 ```bash
@@ -129,6 +129,6 @@ ginkgo -cover
 
 ## Status
 
-[![Actions Status](https://github.com/haaja/go-oidc-mle/workflows/Tests%20on%20linux/badge.svg)](https://github.com/haaja/go-oidc-mle/actions)
+[![Actions Status](https://github.com/qvik/go-oidc-mle/workflows/Tests%20on%20linux/badge.svg)](https://github.com/qvik/go-oidc-mle/actions)
 
-[![Actions Status](https://github.com/haaja/go-oidc-mle/workflows/Tests%20on%20all%20platforms/badge.svg)](https://github.com/haaja/go-oidc-mle/actions)
+[![Actions Status](https://github.com/qvik/go-oidc-mle/workflows/Tests%20on%20all%20platforms/badge.svg)](https://github.com/qvik/go-oidc-mle/actions)
