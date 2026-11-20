@@ -129,6 +129,4 @@ ginkgo -cover
 
 ## Status
 
-[![Actions Status](https://github.com/haaja/go-oidc-mle/workflows/Tests%20on%20linux/badge.svg)](https://github.com/haaja/go-oidc-mle/actions)
-
-[![Actions Status](https://github.com/haaja/go-oidc-mle/workflows/Tests%20on%20all%20platforms/badge.svg)](https://github.com/haaja/go-oidc-mle/actions)
+[![CI](https://github.com/haaja/go-oidc-mle/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/haaja/go-oidc-mle/actions/workflows/ci.yml)
